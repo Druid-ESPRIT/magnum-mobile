@@ -83,7 +83,8 @@ public class addEventForm extends BaseForm {
         TextField name = new TextField(id == 0 ? "" : e.getName(), "Name");
         TextField description = new TextField(id == 0 ? "" : e.getDescription(), "Description");
         TextField location = new TextField(id == 0 ? "" : e.getLocation(), "Location");
-
+        
+  
         Picker TypePicker = new Picker();
         TypePicker.setType(Display.PICKER_TYPE_STRINGS);
         TypePicker.setStrings("Online", "On-site");

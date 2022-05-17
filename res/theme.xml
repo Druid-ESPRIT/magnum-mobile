@@ -109,7 +109,8 @@
         <val key="Form.transparency" value="255" />
         <val key="ImageOverlay.bgColor" value="14134b" />
         <val key="ImageOverlay.transparency" value="60" />
-        <val key="Label.fgColor" value="a2a1b8" />
+        <val key="Label.bgColor" value="000000" />
+        <val key="Label.fgColor" value="00000" />
         <font key="Label.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
         <val key="Label.transparency" value="0" />
         <val key="LargeWhiteText.align" value="1" />
@@ -130,6 +131,8 @@
         <val key="LogoLabel.padUnit" value="2,0,2,0" />
         <val key="LogoLabel.padding" value="3,3,0,0" />
         <val key="LogoLabel.transparency" value="0" />
+        <val key="MenuButton.bgColor" value="000000" />
+        <val key="MenuButton.fgColor" value="000000" />
         <font key="MenuButton.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
         <val key="MenuButton.padUnit" value="2,2,2,2" />
         <val key="MenuButton.padding" value="2.0,2.0,2.0,2.0" />
@@ -257,11 +260,12 @@
         <val key="StatusBarSideMenu.margin" value="0,0,0,0" />
         <val key="StatusBarSideMenu.padding" value="0,0,0,0" />
         <val key="TextField.align" value="4" />
+        <val key="TextField.bgColor" value="000000" />
         <border key="TextField.border" type="empty" />
-        <val key="TextField.fgColor" value="ffffff" />
-        <val key="TextField.margin" value="0,0,0,0" />
+        <val key="TextField.fgColor" value="00000" />
+        <val key="TextField.margin" value="0.0,0.0,0.0,0.0" />
         <val key="TextField.padUnit" value="2,2,2,2" />
-        <val key="TextField.padding" value="2,2,2,2" />
+        <val key="TextField.padding" value="2.0,2.0,2.0,2.0" />
         <val key="TextField.sel#align" value="4" />
         <border key="TextField.sel#border" type="empty" />
         <val key="TextField.sel#fgColor" value="ffffff" />
@@ -290,10 +294,9 @@
         <val key="Title.fgColor" value="ffffff" />
         <font key="Title.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
         <val key="Title.textDecoration" value="0" />
-        <val key="TitleCommand.fgColor" value="ffffff" />
         <font key="TitleCommand.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
         <val key="TitleCommand.padUnit" value="2,2,2,2" />
-        <val key="TitleCommand.padding" value="2,2,2,2" />
+        <val key="TitleCommand.padding" value="2.0,2.0,2.0,2.0" />
         <val key="TitleCommand.press#fgColor" value="ffffff" />
         <font key="TitleCommand.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
         <val key="TitleCommand.press#padUnit" value="2,2,2,2" />
@@ -335,6 +338,7 @@
     </theme>
     <image name="timeline-background.jpg"  />
     <image name="twitter-logo.png" type="multi"  />
+    <image name="wallet.PNG"  />
     <image name="welcome-background.jpg"  />
     <image name="welcome-slide-1.png" type="multi"  />
     <image name="welcome-slide-2.png" type="multi"  />
