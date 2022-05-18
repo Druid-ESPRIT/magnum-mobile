@@ -41,6 +41,7 @@ import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.table.TableLayout;
 import java.io.IOException;
 
+
 /**
  *
  * @author asus
@@ -185,9 +186,12 @@ public class addOfferForm extends BaseForm{
          File fileimage = new File(filePath);
           String file = fileimage.getName();
           image.setText(file);
-          
           String dir = "C:/Users/asus/Documents/NetBeansProjects/Magnum-mobile/src/resources";
-          File imageDir = new File(dir);
+           File imageDir = new File(dir);
+        
+          
+         
+         
       
    }
 };                    

@@ -4,13 +4,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/offerListing.java</file>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/ListArticleForm.java</file>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/BaseForm.java</file>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/WalletForm.java</file>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/addEventForm.java</file>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/EventsForm.java</file>
-            <file>file:/C:/Users/Omar/Desktop/Integration/Magnum-mobile/src/com/mycompany/gui/offerManager.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/WalkthruForm.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/offerListing.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/addOfferForm.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/NewsfeedForm.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/BaseForm.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/offerManager.java</file>
+            <file>file:/C:/xampp/htdocs/magnum-mobile/src/com/mycompany/gui/SignInForm.java</file>
         </group>
     </open-files>
 </project-private>

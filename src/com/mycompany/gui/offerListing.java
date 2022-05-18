@@ -124,7 +124,7 @@ public class offerListing extends BaseForm {
         
         for(Offer ofs : list ){
            // String urlImage ="logoo.png"; 
-             String urlImage = "http://localhost/Magnum-mobile/src/resources/"+ofs.getImage();
+            String urlImage = "http://localhost/Magnum-mobile/src/resources/"+ofs.getImage();
             
             Image placeHolder = Image.createImage(120, 90);
             EncodedImage enc = EncodedImage.createFromImage(placeHolder,false);
