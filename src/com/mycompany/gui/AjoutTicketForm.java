@@ -158,13 +158,13 @@ public class AjoutTicketForm extends BaseForm {
         
 
 
-        TextField id = new TextField("", "write id.. ");
+        TextField id = new TextField("", "write Ticket.. ");
         id.setUIID("TextFieldBlack");
-        addStringValue("ID",id);
+        addStringValue("Ticket",id);
         
-        TextField userid = new TextField("", "write userid.. ");
+        TextField userid = new TextField("", "write user.. ");
         userid.setUIID("TextFieldBlack");
-        addStringValue("userID",userid);
+        addStringValue("user",userid);
       
         
           TextField subject = new TextField("", "write subject.. ");

@@ -47,7 +47,7 @@ import java.util.ArrayList;
  */
 public class DetTicketForm extends BaseForm {
     Form current;
-    
+   
     public DetTicketForm(Resources res,int t){
                 super("Newsfeed", BoxLayout.y());
         Toolbar tb = new Toolbar(true);
@@ -62,7 +62,7 @@ public class DetTicketForm extends BaseForm {
 
         });
         //design
-        
+       
                 Tabs swipe = new Tabs();
 
         Label s1 = new Label();
@@ -123,7 +123,7 @@ public class DetTicketForm extends BaseForm {
         mesListes.addActionListener((e) -> {
                InfiniteProgress ip = new InfiniteProgress();
         final Dialog ipDlg = ip.showInifiniteBlocking();
-        
+       
         //  ListReclamationForm a = new ListReclamationForm(res);
           //  a.show();
             refreshTheme();
@@ -147,10 +147,10 @@ public class DetTicketForm extends BaseForm {
         addOrientationListener(e -> {
             updateArrowPosition(barGroup.getRadioButton(barGroup.getSelectedIndex()), arrow);
         });
-        
-                
+       
+               
         //Appel affichage methode
-        ArrayList<Ticket>list = ServiceTicket.getInstance().AfficherCons(t); 
+        ArrayList<Ticket>list = ServiceTicket.getInstance().AfficherCons(t);
              int i = 0;
         for(Ticket t1 : list)
         {
@@ -161,21 +161,21 @@ public class DetTicketForm extends BaseForm {
        
 
 
-        
-        
+       
+       
         //enddesign
-        
-        
-        
-        
+       
+       
+       
+       
     }
-    
-    
-    
+   
+   
+   
         private void addTab(Tabs swipe, Label spacer, Image image, String string, String text, Resources res) {
 
         int size = Math.min(Display.getInstance().getDisplayWidth(), Display.getInstance().getDisplayHeight());
-        
+       
         if(image.getHeight() < size)
         {
             image = image.scaledHeight(size);
@@ -230,73 +230,73 @@ public class DetTicketForm extends BaseForm {
         Button image = new Button();
         image.setUIID("Label");
         Container cnt = BorderLayout.west(image);
-          
-        Label TicketTxt = new Label("Ticket "+i,"NewsTopLine2");
-        Label idTxt = new Label("ID de la Ticket: "+t.getid(),"NewsTopLine2");
-        Label useridTxt = new Label("userID de la Ticket: "+t.getuserid(),"NewsTopLine2");
+         
+        Label TicketTxt = new Label("N: "+i,"NewsTopLine2");
+        Label idTxt = new Label(" Ticket: "+t.getid(),"NewsTopLine2");
+        Label useridTxt = new Label("user : "+t.getuserid(),"NewsTopLine2");
         Label subjectTxt = new Label("Subject: "+t.getsubject(),"NewsTopLine2");
         Label descriptionTxt = new Label("Description: "+t.getdescription(),"NewsTopLine2");
         Label statusTxt = new Label("STATUS: "+t.getstatus(),"NewsTopLine2");
        // Label resolveridTxt = new Label("RESOLVER ID: "+t.getresolverid(),"NewsTopLine2");
        // Label creationdatedTxt = new Label("date: "+t.getcreationdate(),"NewsTopLine2");
       //  Label evaluateTxt = new Label("evaluate: "+t.getevaluate(),"NewsTopLine2");
-        
+       
         Label margin = new Label("","NewsTopLine2");        
-        
-        
-      
+       
+       
+     
        
 
  
-        
-        
-        
+       
+       
+          if("Pending".equals(t.getstatus()))
+        {
                
          Button s1 = new Button("⭐ ");
-        s1.addActionListener(e -> {     
+        s1.addActionListener(e -> {    
             ServiceTicket.getInstance().ModifierEvaluate(t.getid(),1);
             new ListTicketForm(res).show();
-            
+           
              new DetTicketForm(res,t.getuserid()).show();
-            
+           
         });
         s1.setUIID("Link");
-        
-        
-        
+       
+       
+       
         //Label Evaluate = new Label("Evaluate!");
          Button s2 = new Button("⭐ ");
-        s2.addActionListener(e -> {     
+        s2.addActionListener(e -> {    
             ServiceTicket.getInstance().ModifierEvaluate(t.getid(),2);
             new DetTicketForm(res,t.getuserid()).show();
         });
         s2.setUIID("Link");
-        
+       
          Button s3 = new Button("⭐ ");
-        s3.addActionListener(e -> {     
+        s3.addActionListener(e -> {    
             ServiceTicket.getInstance().ModifierEvaluate(t.getid(),3);
             new DetTicketForm(res,t.getuserid()).show();
         });
         s3.setUIID("Link");
-        
-        
+       
+       
          Button s4 = new Button("⭐ ");
-        s4.addActionListener(e -> {     
+        s4.addActionListener(e -> {    
             ServiceTicket.getInstance().ModifierEvaluate(t.getid(),4);
             new DetTicketForm(res,t.getuserid()).show();
         });
         s4.setUIID("Link");
-        
+       
          Button s5 = new Button("⭐ ");
-        s5.addActionListener(e -> {     
+        s5.addActionListener(e -> {    
             ServiceTicket.getInstance().ModifierEvaluate(t.getid(),5);
             new DetTicketForm(res,t.getuserid()).show();
         });
         s5.setUIID("Link");
-        
-        
-              
-           cnt.add(BorderLayout.CENTER, BoxLayout.encloseY(
+       
+     
+          cnt.add(BorderLayout.CENTER, BoxLayout.encloseY(
 
             BoxLayout.encloseX(TicketTxt),
             BoxLayout.encloseX(idTxt),
@@ -304,15 +304,71 @@ public class DetTicketForm extends BaseForm {
             BoxLayout.encloseX(subjectTxt),
             BoxLayout.encloseX(descriptionTxt),
             BoxLayout.encloseX(statusTxt),
-         //   BoxLayout.encloseX(resolveridTxt),
-           // BoxLayout.encloseX(evaluateTxt),
-          //  BoxLayout.encloseX(creationdatedTxt),
-            FlowLayout.encloseCenter(s1,s2,s3,s4,s5),
+            //FlowLayout.encloseCenter(s1,s2,s3,s4,s5),
             BoxLayout.encloseX(margin)
                    
                        ));
+        }else{
+             
+             
+             
+         Button s1 = new Button("⭐ ");
+        s1.addActionListener(e -> {    
+            ServiceTicket.getInstance().ModifierEvaluate(t.getid(),1);
+            new ListTicketForm(res).show();
            
-          
+             new DetTicketForm(res,t.getuserid()).show();
+           
+        });
+        s1.setUIID("Link");
+       
+       
+       
+        //Label Evaluate = new Label("Evaluate!");
+         Button s2 = new Button("⭐ ");
+        s2.addActionListener(e -> {    
+            ServiceTicket.getInstance().ModifierEvaluate(t.getid(),2);
+            new DetTicketForm(res,t.getuserid()).show();
+        });
+        s2.setUIID("Link");
+       
+         Button s3 = new Button("⭐ ");
+        s3.addActionListener(e -> {    
+            ServiceTicket.getInstance().ModifierEvaluate(t.getid(),3);
+            new DetTicketForm(res,t.getuserid()).show();
+        });
+        s3.setUIID("Link");
+       
+       
+         Button s4 = new Button("⭐ ");
+        s4.addActionListener(e -> {    
+            ServiceTicket.getInstance().ModifierEvaluate(t.getid(),4);
+            new DetTicketForm(res,t.getuserid()).show();
+        });
+        s4.setUIID("Link");
+       
+         Button s5 = new Button("⭐ ");
+        s5.addActionListener(e -> {    
+            ServiceTicket.getInstance().ModifierEvaluate(t.getid(),5);
+            new DetTicketForm(res,t.getuserid()).show();
+        });
+        s5.setUIID("Link");
+       
+     
+          cnt.add(BorderLayout.CENTER, BoxLayout.encloseY(
+
+            BoxLayout.encloseX(TicketTxt),
+            BoxLayout.encloseX(idTxt),
+            BoxLayout.encloseX(useridTxt),
+            BoxLayout.encloseX(subjectTxt),
+            BoxLayout.encloseX(descriptionTxt),
+            BoxLayout.encloseX(statusTxt),
+            FlowLayout.encloseCenter(s1,s2,s3,s4,s5),
+            BoxLayout.encloseX(margin)
+                   
+                       ));}
+           
+         
 
            
            
@@ -321,22 +377,22 @@ public class DetTicketForm extends BaseForm {
         addStringValue("", btnt);
 
         btnt.addActionListener((e) -> {     });
-        
-        
-        
+       
+       
+       
     }
 
    
 
    
 
-  
+ 
   private void addStringValue(String s, Component v) {
 
         add(BorderLayout.west(new Label(s,"PaddedLabel")).add(BorderLayout.CENTER,v));
         add(createLineSeparator(0xeeeeee));
 
     }
-  
-    
+ 
+   
 }

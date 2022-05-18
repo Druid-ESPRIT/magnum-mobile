@@ -159,9 +159,9 @@ public class ConsulterForm extends BaseForm {
         
 
 
-        TextField userid = new TextField("", "write userid.. ");
+        TextField userid = new TextField("", "write user.. ");
         userid.setUIID("TextFieldBlack");
-        addStringValue("userid",userid);
+        addStringValue("user",userid);
 
         Button btnshow = new Button("SHOW");
         addStringValue("", btnshow);

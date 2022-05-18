@@ -231,9 +231,9 @@ public class ListTicketForm extends BaseForm {
         image.setUIID("Label");
         Container cnt = BorderLayout.west(image);
           
-        Label TicketTxt = new Label("Num"+i,"NewsTopLine2");
-        Label idTxt = new Label("ID:"+t.getid(),"NewsTopLine2");
-        Label useridTxt = new Label("userid:"+t.getuserid(),"NewsTopLine2");
+        Label TicketTxt = new Label("N"+i,"NewsTopLine2");
+        Label idTxt = new Label("Ticket:"+t.getid(),"NewsTopLine2");
+        Label useridTxt = new Label("user:"+t.getuserid(),"NewsTopLine2");
         Label subjectTxt = new Label("Subject:"+t.getsubject(),"NewsTopLine2");
         Label descriptionTxt = new Label("Description:"+t.getdescription(),"NewsTopLine2");
         Label statusTxt = new Label("STATUS:"+t.getstatus(),"NewsTopLine2");

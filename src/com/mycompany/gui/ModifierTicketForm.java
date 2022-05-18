@@ -113,7 +113,7 @@ public class ModifierTicketForm extends BaseForm {
         add(LayeredLayout.encloseIn(swipe, radioContainer));
 
         ButtonGroup barGroup = new ButtonGroup();
-        RadioButton commandes = RadioButton.createToggle("Ticket ID :"+Integer.toString(t.getid()), barGroup);
+        RadioButton commandes = RadioButton.createToggle("Ticket  :"+Integer.toString(t.getid()), barGroup);
         commandes.setUIID("SelectBar");
         Label arrow = new Label(res.getImage("news-tab-down-arrow.png"), "Container");
 
@@ -148,7 +148,7 @@ public class ModifierTicketForm extends BaseForm {
 
         // End Design
 
-        TextField id = new TextField(Integer.toString(t.getuserid()), "Userid" , 20 , TextField.ANY);
+        TextField id = new TextField(Integer.toString(t.getuserid()), "User" , 20 , TextField.ANY);
         TextField status = new TextField(t.getstatus(), "STATUS" , 20 , TextField.ANY);
         
 
